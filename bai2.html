@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input">
+<button onclick="hinhTron()">check</button>
+<p id="S"></p>
+<p id="C"></p>
+<script>
+    function hinhTron() {
+        let r = document.getElementById('input').value
+        let pi=3.14
+        document.getElementById('S').innerHTML=r*r*pi
+        document.getElementById('C').innerHTML=2*r*pi
+    }
+</script>
+</body>
+</html>

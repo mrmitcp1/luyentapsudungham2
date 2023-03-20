@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num">
+<button onclick="chekcSo()">check</button>
+<script>
+    function chekcSo() {
+        let n = document.getElementById('num').value
+        if (isNaN(n)){
+            alert(` ${n} khong phai la so`)
+        } else
+            alert(`${n} la so`);
+
+    }
+</script>
+</body>
+</html>

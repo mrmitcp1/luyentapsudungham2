@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="btnf()">
+<!--<input id="num" type="text">-->
+<!--<button onclick="btnf()">Change</button>-->
+<script>
+    function btnf() {
+      // let num = document.getElementById('num').value
+      //   let arr = num.split(',').map(Number)
+        let char=+prompt('nhap so can kiem tra')
+        let arr = [2,1,4,5,1,5,3,1,2,5,4,3,3,3,3,5,2,7,6,2,2,4,5]
+        let count=0
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]===char) {
+                count++
+
+            }
+            else return -1
+        }  alert('co ' + count + ' so ' + char)
+    }
+</script>
+
+</body>
+</html>
