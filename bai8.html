@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" name="input" id="num">
+<button onclick="change()"git >change</button>
+<p id="result"></p>
+<script>
+    function change() {
+        let num = document.getElementById('num').value
+        let arr = num.split(',').map(Number)
+        let fisrt = 0
+        let last = arr.length - 1
+        with (fisrt < last) {
+            let a = arr[fisrt]
+            arr[fisrt]=arr[last]
+            arr[last] =a
+            fisrt++
+            last--
+        }document.getElementById('result').innerHTML=arr
+
+
+    }
+</script>
+</body>
+</html>
